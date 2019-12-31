@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
+
 import './App.css';
+import Filatarjeta from './filatarjeta.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Filatarjeta clase="trescol" clasehija="azul" numcol={3} />
+     <Filatarjeta clase="doscol" clasehija="roja"  numcol={2} />
     </div>
   );
 }
