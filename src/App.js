@@ -2,13 +2,12 @@ import React from 'react';
 
 
 import './App.css';
-import Filatarjeta from './filatarjeta.jsx';
+import HomePage from './pages/homepage/homepage.component';
 
 function App() {
   return (
     <div className="App">
-     <Filatarjeta clase="trescol" clasehija="azul" numcol={3} />
-     <Filatarjeta clase="doscol" clasehija="roja"  numcol={2} />
+     <HomePage />
     </div>
   );
 }
