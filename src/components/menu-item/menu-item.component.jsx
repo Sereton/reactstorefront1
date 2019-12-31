@@ -2,9 +2,10 @@ import React from 'react'
 import "./menu-item.styles.scss"
 
 const MenuItem = ({title, subtitle,key, imageUrl,size}) => (
-    <div className={`${size} menu-item`} key={key} style={{
+    <div className={`${size} menu-item`} key={key} >
+        <div className="backgroundImage" style={{
       
-      backgroundImage: `url(${imageUrl})`}}>
+      backgroundImage: `url(${imageUrl})`}} />
         <div className='content'>
           <div className='title'>{title}</div>
           <span className='subtitle'>{subtitle}</span>
